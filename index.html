@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carrusel de Imágenes</h1>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-inner" id="carouselInner">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/800/400?random=1" alt="Imagen 1">
+                        <div class="carousel-caption">
+                            <h3>Imagen 1</h3>                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/800/400?random=2" alt="Imagen 2">
+                        <div class="carousel-caption">
+                            <h3>Imagen 2</h3>                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/800/400?random=3" alt="Imagen 3">
+                        <div class="carousel-caption">
+                            <h3>Imagen 3</h3>                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/800/400?random=4" alt="Imagen 4">
+                        <div class="carousel-caption">
+                            <h3>Imagen 4</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/800/400?random=5" alt="Imagen 5">
+                        <div class="carousel-caption">
+                            <h3>Imagen 5</h3>
+                            <p>Descripción de la quinta imagen</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botones de navegación -->
+                <button class="carousel-btn prev-btn" id="prevBtn">
+                    <span>&#8249;</span>
+                </button>
+                <button class="carousel-btn next-btn" id="nextBtn">
+                    <span>&#8250;</span>
+                </button>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controles adicionales -->
+        <div class="controls">
+            <button id="playPauseBtn" class="control-btn">Pausar</button>
+            <button id="resetBtn" class="control-btn">Reiniciar</button>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
